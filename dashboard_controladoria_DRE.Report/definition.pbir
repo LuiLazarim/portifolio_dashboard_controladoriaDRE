@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../ashboard_Controladoria com DRE.SemanticModel"
+      "path": "../dashboard_controladoria_DRE.SemanticModel"
     }
   }
 }

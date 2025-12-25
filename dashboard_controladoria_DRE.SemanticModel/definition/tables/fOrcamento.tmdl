@@ -35,7 +35,7 @@ table fOrcamento
 		queryGroup: fato
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 				    fOrcamento_Sheet = Fonte{[Item="fOrcamento",Kind="Sheet"]}[Data],
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fOrcamento_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", type text}, {"valor", Currency.Type}}),

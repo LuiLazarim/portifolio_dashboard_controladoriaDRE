@@ -48,7 +48,7 @@ table dEstruturaDRE
 		queryGroup: dimensao
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 				    dEstruturaDRE_Sheet = Fonte{[Item="dEstruturaDRE",Kind="Sheet"]}[Data],
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(dEstruturaDRE_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id", Int64.Type}, {"index", Int64.Type}, {"contaGerencial", type text}, {"subtotal", Int64.Type}, {"empresa", type text}, {"Column6", type any}, {"Column7", type any}, {"Column8", type any}, {"Column9", type any}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}}),

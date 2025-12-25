@@ -1,6 +1,6 @@
 expression fLancamento1_ano1 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento1_ano1_Sheet = Fonte{[Item="fLancamento1_ano1",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento1_ano1_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -14,7 +14,7 @@ expression fLancamento1_ano1 =
 
 expression fLancamento1_ano2 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento1_ano2_Sheet = Fonte{[Item="fLancamento1_ano2",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento1_ano2_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -28,7 +28,7 @@ expression fLancamento1_ano2 =
 
 expression fLancamento1_ano3 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento1_ano3_Sheet = Fonte{[Item="fLancamento1_ano3",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento1_ano3_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -42,7 +42,7 @@ expression fLancamento1_ano3 =
 
 expression fLancamento2_ano1 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento2_ano1_Sheet = Fonte{[Item="fLancamento2_ano1",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento2_ano1_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -56,7 +56,7 @@ expression fLancamento2_ano1 =
 
 expression fLancamento2_ano2 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento2_ano2_Sheet = Fonte{[Item="fLancamento2_ano2",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento2_ano2_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -70,7 +70,7 @@ expression fLancamento2_ano2 =
 
 expression fLancamento2_ano3 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento2_ano3_Sheet = Fonte{[Item="fLancamento2_ano3",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento2_ano3_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -84,7 +84,7 @@ expression fLancamento2_ano3 =
 
 expression fLancamento3_ano1 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento3_ano1_Sheet = Fonte{[Item="fLancamento3_ano1",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento3_ano1_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -98,7 +98,7 @@ expression fLancamento3_ano1 =
 
 expression fLancamento3_ano2 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento3_ano2_Sheet = Fonte{[Item="fLancamento3_ano2",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento3_ano2_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
@@ -112,7 +112,7 @@ expression fLancamento3_ano2 =
 
 expression fLancamento3_ano3 =
 		let
-		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 		    fLancamento3_ano3_Sheet = Fonte{[Item="fLancamento3_ano3",Kind="Sheet"]}[Data],
 		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento3_ano3_Sheet, [PromoteAllScalars=true]),
 		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})

@@ -4,7 +4,7 @@
   "artifacts": [
     {
       "report": {
-        "path": "ashboard_Controladoria com DRE.Report"
+        "path": "dashboard_controladoria_DRE.Report"
       }
     }
   ],

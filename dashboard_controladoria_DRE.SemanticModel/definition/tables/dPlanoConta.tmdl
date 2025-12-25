@@ -65,7 +65,7 @@ table dPlanoConta
 		queryGroup: dimensao
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
 				    dPlanoConta_Sheet = Fonte{[Item="dPlanoConta",Kind="Sheet"]}[Data],
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(dPlanoConta_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id", Int64.Type}, {"index", Int64.Type}, {"descricaoN1", type text}, {"descricaoN2", type text}, {"detalharN2", Int64.Type}, {"mascaraDRE_id", Int64.Type}, {"tipoLancamento", Int64.Type}}),
