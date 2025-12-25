@@ -1,0 +1,38 @@
+relationship 3a279501-f95c-482c-b5d8-f2c1d8166d8e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendario.Data
+	toColumn: LocalDateTable_e2a55883-9ec5-44a4-a172-816810609142.Date
+
+relationship 13c05f65-7ff6-4364-b3fd-aa93e38c6783
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendario.InicioMes
+	toColumn: LocalDateTable_f8625c3a-51a5-49e5-835e-57b071a58d52.Date
+
+relationship bdeab096-ec07-3696-6599-95d73b879a3a
+	fromColumn: fLancamentos.competencia_data
+	toColumn: dCalendario.Data
+
+relationship 12cb6f0e-832d-32c0-89b5-a596c980b8b0
+	fromColumn: fOrcamento.competencia_data
+	toColumn: dCalendario.Data
+
+relationship fcb00835-b5ee-9638-f8da-372ae6c0175d
+	fromColumn: fPrevisao.competencia_data
+	toColumn: dCalendario.Data
+
+relationship a4942297-b3b1-bad2-6f0c-5654f76df4b2
+	fromColumn: fLancamentos.planoContas_id
+	toColumn: dPlanoConta.id
+
+relationship 83368201-3812-c97a-079d-2a7b582263a0
+	fromColumn: fOrcamento.planoContas_id
+	toColumn: dPlanoConta.id
+
+relationship ffe9e2c0-da3b-76e3-408c-939d7d1d01ca
+	fromColumn: fPrevisao.planoContas_id
+	toColumn: dPlanoConta.id
+
+relationship 70df2ed8-6afb-e820-82c0-1ad2680f91bf
+	fromColumn: dPlanoConta.mascaraDRE_id
+	toColumn: dEstruturaDRE.id
+

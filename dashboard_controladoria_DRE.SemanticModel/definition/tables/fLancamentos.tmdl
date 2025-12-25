@@ -1,0 +1,48 @@
+table fLancamentos
+	lineageTag: 326e01f4-c8c1-404e-afc5-0ca82e5a750b
+
+	column competencia_data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 11744b42-f556-44ab-9f05-b01fa990b85a
+		summarizeBy: none
+		sourceColumn: competencia_data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column planoContas_id
+		dataType: string
+		lineageTag: db41f208-606d-493f-a942-e2341eadebeb
+		summarizeBy: none
+		sourceColumn: planoContas_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 0b0cd97c-4ac1-4169-bcdd-f9be353784f0
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition fLancamentos = m
+		mode: import
+		queryGroup: fato
+		source =
+				let
+				    Fonte = Table.Combine({fLancamento1_ano1, fLancamento1_ano2, fLancamento1_ano3, fLancamento2_ano1, fLancamento2_ano2, fLancamento2_ano3, fLancamento3_ano1, fLancamento3_ano2, fLancamento3_ano3}),
+				    #"Linhas Filtradas" = Table.SelectRows(Fonte, each [competencia_data] <> null and [competencia_data] <> ""),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"competencia_data", type date}, {"planoContas_id", type text}, {"valor", Currency.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

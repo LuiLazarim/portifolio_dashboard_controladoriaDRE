@@ -1,0 +1,126 @@
+expression fLancamento1_ano1 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento1_ano1_Sheet = Fonte{[Item="fLancamento1_ano1",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento1_ano1_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 9bf47675-0e16-4ded-aeab-ba43b29468dc
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento1_ano2 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento1_ano2_Sheet = Fonte{[Item="fLancamento1_ano2",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento1_ano2_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: e5b2ab14-6be1-4a3c-b7b8-66daf2013cfe
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento1_ano3 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento1_ano3_Sheet = Fonte{[Item="fLancamento1_ano3",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento1_ano3_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: f917b0e0-b72c-4eee-a319-fd9ac1eddfc9
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento2_ano1 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento2_ano1_Sheet = Fonte{[Item="fLancamento2_ano1",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento2_ano1_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 832b9b63-230b-4e4a-ac9c-497200fb36e4
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento2_ano2 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento2_ano2_Sheet = Fonte{[Item="fLancamento2_ano2",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento2_ano2_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 95689fdd-53f5-4435-82da-bd0229d17ca5
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento2_ano3 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento2_ano3_Sheet = Fonte{[Item="fLancamento2_ano3",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento2_ano3_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: bbbd53e1-742f-47e0-b51f-f62c3c2a1d1f
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento3_ano1 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento3_ano1_Sheet = Fonte{[Item="fLancamento3_ano1",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento3_ano1_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 142d7ddc-4640-439f-b95e-28067dd84ca7
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento3_ano2 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento3_ano2_Sheet = Fonte{[Item="fLancamento3_ano2",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento3_ano2_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: fe42bcc8-b04a-45db-9697-4cd3900e9349
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
+expression fLancamento3_ano3 =
+		let
+		    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+		    fLancamento3_ano3_Sheet = Fonte{[Item="fLancamento3_ano3",Kind="Sheet"]}[Data],
+		    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fLancamento3_ano3_Sheet, [PromoteAllScalars=true]),
+		    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", Int64.Type}, {"valor", type number}})
+		in
+		    #"Tipo Alterado"
+	lineageTag: 47c8804c-7c37-4a86-a798-c89e6d797cf2
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

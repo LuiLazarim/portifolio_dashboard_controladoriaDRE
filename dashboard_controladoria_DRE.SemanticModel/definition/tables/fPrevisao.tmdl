@@ -1,0 +1,50 @@
+table fPrevisao
+	lineageTag: 54ed21d7-a8e0-4be1-82f4-fca347b48a5b
+
+	column competencia_data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 57262561-9ec8-400e-b6b5-8fd90e16eb6b
+		summarizeBy: none
+		sourceColumn: competencia_data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column planoContas_id
+		dataType: string
+		lineageTag: 63142cba-da45-401e-84cd-12a38526b01d
+		summarizeBy: none
+		sourceColumn: planoContas_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: decimal
+		lineageTag: d759eb58-68c4-4cc2-a77d-4e9d314d868c
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fPrevisao = m
+		mode: import
+		queryGroup: fato
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\OneDrive\Estudos\Tecnologia\Xperiun\Dashboard de Controladoria com DRE\Desafio\BaseDados.xlsx"), null, true),
+				    fPrevisao_Sheet = Fonte{[Item="fPrevisao",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(fPrevisao_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"competencia_data", type date}, {"planoContas_id", type text}, {"valor", Currency.Type}}),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Tipo Alterado",".","",Replacer.ReplaceText,{"planoContas_id"}),
+				    #"Texto Extraído Após o Delimitador" = Table.TransformColumns(#"Valor Substituído", {{"planoContas_id", each Text.AfterDelimiter(_, "0"), type text}})
+				in
+				    #"Texto Extraído Após o Delimitador"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

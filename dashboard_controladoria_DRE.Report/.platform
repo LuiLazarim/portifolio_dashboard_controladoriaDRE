@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ashboard_Controladoria com DRE"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "877f5e9c-b82b-413b-abd4-548e3b49bbe0"
+  }
+}

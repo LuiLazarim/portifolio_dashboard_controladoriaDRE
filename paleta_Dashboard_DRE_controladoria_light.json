@@ -1,0 +1,75 @@
+﻿{
+  "name": "Cafeteria Premium Theme",
+  "textClasses": {
+    "label": { "color": "#363636", "fontFace": "'Segoe UI', 'Times New Roman'" },
+    "callout": { "color": "#242f40", "fontFace": "'Segoe UI', 'Times New Roman'" },
+    "title": { "color": "#242f40", "fontFace": "'Segoe UI', 'Times New Roman'" },
+    "header": { "color": "#363636", "fontFace": "'Segoe UI', 'Times New Roman'" }
+  },
+  "dataColors": [
+    "#cca43b",
+    "#242f40",
+    "#363636",
+    "#e5e5e5",
+    "#997a2c",
+    "#1b2330",
+    "#595959",
+    "#bfbfbf"
+  ],
+  "foreground": "#cca43b",
+  "foregroundNeutralSecondary": "#363636",
+  "backgroundLight": "#ffffff",
+  "foregroundNeutralTertiary": "#e5e5e5",
+  "background": "#ffffff",
+  "backgroundNeutral": "#e5e5e5",
+  "bad": "#363636",
+  "neutral": "#e5e5e5",
+  "good": "#cca43b",
+  "minimum": "#e5e5e5",
+  "center": "#363636",
+  "maximum": "#cca43b",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#ffffff" } } }],
+        "visualHeader": [{
+          "background": { "solid": { "color": "#ffffff" } },
+          "foreground": { "solid": { "color": "#363636" } },
+          "border": { "solid": { "color": "#e5e5e5" } }
+        }],
+        "visualTooltip": [{
+          "themedTitleFontColor": { "solid": { "color": "#ffffff" } },
+          "themedValueFontColor": { "solid": { "color": "#e5e5e5" } },
+          "themedBackground": { "solid": { "color": "#242f40" } },
+          "actionFontColor": { "solid": { "color": "#cca43b" } }
+        }],
+        "visualHeaderTooltip": [{
+          "themedTitleFontColor": { "solid": { "color": "#ffffff" } },
+          "themedBackground": { "solid": { "color": "#242f40" } }
+        }],
+        "outspacePane": [{
+          "backgroundColor": { "solid": { "color": "#ffffff" } },
+          "foregroundColor": { "solid": { "color": "#363636" } },
+          "checkboxAndApplyColor": { "solid": { "color": "#cca43b" } }
+        }],
+        "filterCard": [{
+          "$id": "Applied",
+          "backgroundColor": { "solid": { "color": "#e5e5e5" } },
+          "foregroundColor": { "solid": { "color": "#242f40" } },
+          "transparency": 0
+        }, {
+          "$id": "Available",
+          "backgroundColor": { "solid": { "color": "#ffffff" } },
+          "foregroundColor": { "solid": { "color": "#363636" } },
+          "transparency": 0
+        }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#e5e5e5" } }, "transparency": 0 }],
+        "outspace": [{ "color": { "solid": { "color": "#e5e5e5" } } }]
+      }
+    }
+  }
+}
