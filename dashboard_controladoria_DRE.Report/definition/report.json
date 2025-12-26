@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Cafeteria_Premium_Theme24266045395399316.json",
+      "name": "Cafeteria_Premium_Theme8125649255760804.json",
       "reportVersionAtImport": {
         "visual": "2.4.0",
         "report": "3.0.0",
@@ -65,14 +65,34 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Cafeteria_Premium_Theme24266045395399316.json",
-          "path": "Cafeteria_Premium_Theme24266045395399316.json",
-          "type": "CustomTheme"
+          "name": "layout_dre6675239036821884.svg",
+          "path": "layout_dre6675239036821884.svg",
+          "type": "Image"
         },
         {
-          "name": "layout_dre9711461173869632.svg",
-          "path": "layout_dre9711461173869632.svg",
+          "name": "moedas9681415582356592.png",
+          "path": "moedas9681415582356592.png",
           "type": "Image"
+        },
+        {
+          "name": "margem017363634696620722.png",
+          "path": "margem017363634696620722.png",
+          "type": "Image"
+        },
+        {
+          "name": "despesa19448708609030254.png",
+          "path": "despesa19448708609030254.png",
+          "type": "Image"
+        },
+        {
+          "name": "interesse27030603838800316.png",
+          "path": "interesse27030603838800316.png",
+          "type": "Image"
+        },
+        {
+          "name": "Cafeteria_Premium_Theme8125649255760804.json",
+          "path": "Cafeteria_Premium_Theme8125649255760804.json",
+          "type": "CustomTheme"
         }
       ]
     }

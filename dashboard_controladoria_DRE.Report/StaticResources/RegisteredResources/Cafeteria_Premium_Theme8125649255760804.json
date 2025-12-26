@@ -506,9 +506,9 @@
   "foregroundNeutralTertiary": "#e5e5e5",
   "background": "#ffffff",
   "backgroundNeutral": "#e5e5e5",
-  "bad": "#363636",
+  "bad": "#b84a4a",
   "neutral": "#e5e5e5",
-  "good": "#cca43b",
+  "good": "#4a7c59",
   "minimum": "#e5e5e5",
   "center": "#363636",
   "maximum": "#cca43b",
@@ -521,8 +521,7 @@
               "solid": {
                 "color": "#ffffff"
               }
-            },
-            "transparency": 100
+            }
           }
         ],
         "visualHeader": [
