@@ -1,10 +1,10 @@
 table fLancamentos
-	lineageTag: 326e01f4-c8c1-404e-afc5-0ca82e5a750b
+	lineageTag: a39f551d-65fc-4f02-bee7-23a36947e618
 
 	column competencia_data
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: 11744b42-f556-44ab-9f05-b01fa990b85a
+		lineageTag: c55861e8-8e6b-4bc3-9eae-90dd9344033a
 		summarizeBy: none
 		sourceColumn: competencia_data
 
@@ -14,7 +14,7 @@ table fLancamentos
 
 	column planoContas_id
 		dataType: string
-		lineageTag: db41f208-606d-493f-a942-e2341eadebeb
+		lineageTag: 29adef35-5377-4f72-ae68-993095f5766c
 		summarizeBy: none
 		sourceColumn: planoContas_id
 
@@ -23,7 +23,7 @@ table fLancamentos
 	column valor
 		dataType: decimal
 		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
-		lineageTag: 0b0cd97c-4ac1-4169-bcdd-f9be353784f0
+		lineageTag: 9a995cc3-7a6f-4e7d-8d4f-53b94bd28ed3
 		summarizeBy: sum
 		sourceColumn: valor
 
@@ -36,11 +36,15 @@ table fLancamentos
 		queryGroup: fato
 		source =
 				let
-				    Fonte = Table.Combine({fLancamento1_ano1, fLancamento1_ano2, fLancamento1_ano3, fLancamento2_ano1, fLancamento2_ano2, fLancamento2_ano3, fLancamento3_ano1, fLancamento3_ano2, fLancamento3_ano3}),
-				    #"Linhas Filtradas" = Table.SelectRows(Fonte, each [competencia_data] <> null and [competencia_data] <> ""),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"competencia_data", type date}, {"planoContas_id", type text}, {"valor", Currency.Type}})
+				    Fonte = Excel.Workbook(File.Contents(diretorioDados), true, true),
+				    #"Linhas Filtradas" = Table.SelectRows(Fonte, each Text.StartsWith([Name], "fLan")),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Linhas Filtradas",{"Data"}),
+				    #"Data Expandido" = Table.ExpandTableColumn(#"Outras Colunas Removidas", "Data", {"competencia_data", "planoContas_id", "valor"}, {"Data.competencia_data", "Data.planoContas_id", "Data.valor"}),
+				    #"Linhas Filtradas1" = Table.SelectRows(#"Data Expandido", each [Data.competencia_data] <> null and [Data.competencia_data] <> ""),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Linhas Filtradas1",{{"Data.competencia_data", type date}, {"Data.planoContas_id", type text}, {"Data.valor", Currency.Type}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Data.competencia_data", "competencia_data"}, {"Data.planoContas_id", "planoContas_id"}, {"Data.valor", "valor"}})
 				in
-				    #"Tipo Alterado"
+				    #"Colunas Renomeadas"
 
 	annotation PBI_NavigationStepName = Navegação
 

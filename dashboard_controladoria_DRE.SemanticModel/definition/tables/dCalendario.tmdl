@@ -167,6 +167,9 @@ table dCalendario
 		lineageTag: e95d2b34-6677-4b84-97c4-1afe9787eb26
 		summarizeBy: none
 		sourceColumn: MesAtual
+		sortByColumn: MesNum
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
