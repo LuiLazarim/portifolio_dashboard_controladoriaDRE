@@ -35,10 +35,10 @@ table dPlanoConta
 		annotation SummarizationSetBy = Automatic
 
 	column detalharN2
-		dataType: boolean
-		formatString: """TRUE"";""TRUE"";""FALSE"""
+		dataType: int64
+		formatString: 0
 		lineageTag: 72c5c7ba-fa09-40f0-94fe-45f1c3680f84
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: detalharN2
 
 		annotation SummarizationSetBy = Automatic
@@ -65,14 +65,13 @@ table dPlanoConta
 		queryGroup: dimensao
 		source =
 				let
-				    Fonte = Excel.Workbook(File.Contents("C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx"), null, true),
+				    Fonte = Excel.Workbook(File.Contents(diretorioDados), null, true),
 				    dPlanoConta_Sheet = Fonte{[Item="dPlanoConta",Kind="Sheet"]}[Data],
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(dPlanoConta_Sheet, [PromoteAllScalars=true]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id", Int64.Type}, {"index", Int64.Type}, {"descricaoN1", type text}, {"descricaoN2", type text}, {"detalharN2", Int64.Type}, {"mascaraDRE_id", Int64.Type}, {"tipoLancamento", Int64.Type}}),
-				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each [id] <> null and [id] <> ""),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Linhas Filtradas",{{"id", type text}, {"mascaraDRE_id", type text}, {"detalharN2", type logical}})
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id", type text}, {"index", Int64.Type}, {"descricaoN1", type text}, {"descricaoN2", type text}, {"detalharN2", Int64.Type}, {"mascaraDRE_id", type text}, {"tipoLancamento", Int64.Type}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each [id] <> null and [id] <> "")
 				in
-				    #"Tipo Alterado1"
+				    #"Linhas Filtradas"
 
 	annotation PBI_ResultType = Table
 

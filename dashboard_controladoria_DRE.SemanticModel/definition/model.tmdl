@@ -16,7 +16,7 @@ queryGroup dimensao
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["fLancamento1_ano1","fLancamento1_ano2","fLancamento1_ano3","fLancamento2_ano1","fLancamento2_ano2","fLancamento2_ano3","fLancamento3_ano1","fLancamento3_ano2","fLancamento3_ano3","dEstruturaDRE","dPlanoConta","dCalendario","fOrcamento","fPrevisao","fLancamentos"]
+annotation PBI_QueryOrder = ["dEstruturaDRE","dPlanoConta","dCalendario","fOrcamento","fPrevisao","fLancamentos","diretorioDados","_medidas"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -29,6 +29,8 @@ ref table dCalendario
 ref table LocalDateTable_e2a55883-9ec5-44a4-a172-816810609142
 ref table LocalDateTable_f8625c3a-51a5-49e5-835e-57b071a58d52
 ref table fLancamentos
+ref table _medidas
+ref table auxMeta
 
 ref cultureInfo pt-BR
 

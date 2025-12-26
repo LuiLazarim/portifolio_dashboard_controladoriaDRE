@@ -521,7 +521,8 @@
               "solid": {
                 "color": "#ffffff"
               }
-            }
+            },
+            "transparency": 100
           }
         ],
         "visualHeader": [

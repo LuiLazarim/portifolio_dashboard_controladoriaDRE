@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Cafeteria_Premium_Theme5210527369430354.json",
+      "name": "Cafeteria_Premium_Theme24266045395399316.json",
       "reportVersionAtImport": {
         "visual": "2.4.0",
         "report": "3.0.0",
@@ -65,9 +65,14 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Cafeteria_Premium_Theme5210527369430354.json",
-          "path": "Cafeteria_Premium_Theme5210527369430354.json",
+          "name": "Cafeteria_Premium_Theme24266045395399316.json",
+          "path": "Cafeteria_Premium_Theme24266045395399316.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "layout_dre9711461173869632.svg",
+          "path": "layout_dre9711461173869632.svg",
+          "type": "Image"
         }
       ]
     }

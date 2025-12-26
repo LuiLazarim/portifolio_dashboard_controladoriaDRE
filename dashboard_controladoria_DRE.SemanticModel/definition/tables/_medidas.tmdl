@@ -1,0 +1,205 @@
+table _medidas
+	lineageTag: 0322f76a-aee1-458b-b3bb-db6de8c7f9d4
+
+	measure '$ Total Lançamentos' =
+			
+			SUMX(
+			    fLancamentos,
+			    fLancamentos[valor] * RELATED(dPlanoConta[tipoLancamento])
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 3b0252d2-7ff8-4d9d-9ec9-3b7e6df91980
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado' = ```
+			
+			VAR vSubtotal = SELECTEDVALUE(dEstruturaDRE[subtotal])
+			VAR vIndex = SELECTEDVALUE(dEstruturaDRE[index])
+			VAR vDescicaoN2 = SELECTEDVALUE(dPlanoConta[detalharN2])
+			VAR vTotal = [$ Total Lançamentos]
+			VAR vAcumulado = 
+			CALCULATE(
+			    [$ Total Lançamentos],
+			    ALLSELECTED(dEstruturaDRE),
+			    VALUES(dEstruturaDRE[empresa]),
+			    dEstruturaDRE[index] < vIndex
+			)
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    vSubtotal = 1 && ISINSCOPE(dPlanoConta[descricaoN1]), BLANK(),
+			    vDescicaoN2 = 0 && ISINSCOPE(dPlanoConta[descricaoN2]), BLANK(),
+			    vSubtotal = 0, vTotal,
+			    vSubtotal = 1, vAcumulado
+			)
+			```
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 394b848a-b93e-4941-a83e-e181a9fb0e1c
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Total Orçado' =
+			
+			SUMX(
+			    fOrcamento,
+			    fOrcamento[valor] * RELATED(dPlanoConta[tipoLancamento])
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 99b95dfb-8f58-41f9-9ac0-9579f6e83eec
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Total Previsto' =
+			
+			SUMX(
+			    fPrevisao,
+			    fPrevisao[valor] * RELATED(dPlanoConta[tipoLancamento])
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 73a61fba-6a0b-493c-9876-0760c36589a7
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Orçado' = ```
+			
+			VAR vSubtotal = SELECTEDVALUE(dEstruturaDRE[subtotal])
+			VAR vIndex = SELECTEDVALUE(dEstruturaDRE[index])
+			VAR vDescicaoN2 = SELECTEDVALUE(dPlanoConta[detalharN2])
+			VAR vTotal = [$ Total Orçado]
+			VAR vAcumulado = 
+			CALCULATE(
+			    [$ Total Orçado],
+			    ALLSELECTED(dEstruturaDRE),
+			    VALUES(dEstruturaDRE[empresa]),
+			    dEstruturaDRE[index] < vIndex
+			)
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    vSubtotal = 1 && ISINSCOPE(dPlanoConta[descricaoN1]), BLANK(),
+			    vDescicaoN2 = 0 && ISINSCOPE(dPlanoConta[descricaoN2]), BLANK(),
+			    vSubtotal = 0, vTotal,
+			    vSubtotal = 1, vAcumulado
+			)
+			```
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 213af72e-53c7-41bc-a55c-f4e371538555
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Previsto' = ```
+			
+			VAR vSubtotal = SELECTEDVALUE(dEstruturaDRE[subtotal])
+			VAR vIndex = SELECTEDVALUE(dEstruturaDRE[index])
+			VAR vDescicaoN2 = SELECTEDVALUE(dPlanoConta[detalharN2])
+			VAR vTotal = [$ Total Previsto]
+			VAR vAcumulado = 
+			CALCULATE(
+			    [$ Total Previsto],
+			    ALLSELECTED(dEstruturaDRE),
+			    VALUES(dEstruturaDRE[empresa]),
+			    dEstruturaDRE[index] < vIndex
+			)
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    vSubtotal = 1 && ISINSCOPE(dPlanoConta[descricaoN1]), BLANK(),
+			    vDescicaoN2 = 0 && ISINSCOPE(dPlanoConta[descricaoN2]), BLANK(),
+			    vSubtotal = 0, vTotal,
+			    vSubtotal = 1, vAcumulado
+			)
+			```
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 252cc687-525e-4e78-80b9-34fc85b88396
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Meta' =
+			
+			IF(
+			    SELECTEDVALUE(auxMeta[auxMeta Pedido]) = 0,
+			    [$ Orçado],
+			    [$ Previsto]
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 7ab8207b-7ac8-4739-88d0-ab829a00e787
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Meta vs Realizado' =
+			
+			VAR vMeta = [$ Meta]
+			VAR vRealizado = [$ Realizado]
+			VAR vDif = vRealizado - vMeta
+			RETURN
+			DIVIDE(
+			    vDif,
+			    ABS(vMeta)
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 10dea740-97bb-4123-bfb1-0139aabbedf9
+
+	measure '$ Realizado YDT' =
+			
+			CALCULATE(
+			    [$ Realizado],
+			    DATESYTD(dCalendario[Data])
+			)
+		formatString: #,0
+		lineageTag: 082e588a-1134-4506-aa84-e61eb235caaf
+
+	measure '$ Meta YDT' =
+			
+			CALCULATE(
+			    [$ Meta],
+			    DATESYTD(dCalendario[Data])
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 7b8dd6b0-ae7d-4aec-8a8d-5964be7e5b9c
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Meta vs Realizado YDT' =
+			
+			VAR vMeta = [$ Meta YDT]
+			VAR vRealizado = [$ Realizado YDT]
+			VAR vDif = vRealizado - vMeta
+			RETURN
+			DIVIDE(
+			    vDif,
+			    ABS(vMeta)
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: bccd81a1-caf5-48c8-a3e0-62ca2a73832c
+
+	measure 'KPI Flag Mês' = ```
+			IF([% Meta vs Realizado] < 0, 1, 0) 
+			```
+		formatString: 0
+		lineageTag: d9b4f46d-9b6c-46ac-a940-746796188658
+
+	measure 'KPI Flag YDT' = IF([% Meta vs Realizado YDT] < 0, 1, 0)
+		formatString: 0
+		lineageTag: f8d5b590-5964-41c0-857e-54d398ff1ea6
+
+	measure 'KPI Flag' =
+			
+			IF(
+			    [KPI Flag Mês] = 1 && [KPI Flag YDT] = 1,
+			    "🚩"
+			)
+		lineageTag: dedb485b-4d96-4eff-80e2-8d096a15b272
+
+	partition _medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
