@@ -8,6 +8,7 @@ table _medidas
 			    fLancamentos[valor] * RELATED(dPlanoConta[tipoLancamento])
 			)
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: Totais
 		lineageTag: 3b0252d2-7ff8-4d9d-9ec9-3b7e6df91980
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -35,6 +36,7 @@ table _medidas
 			)
 			```
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
 		lineageTag: 394b848a-b93e-4941-a83e-e181a9fb0e1c
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -46,6 +48,7 @@ table _medidas
 			    fOrcamento[valor] * RELATED(dPlanoConta[tipoLancamento])
 			)
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: Totais
 		lineageTag: 99b95dfb-8f58-41f9-9ac0-9579f6e83eec
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -57,6 +60,7 @@ table _medidas
 			    fPrevisao[valor] * RELATED(dPlanoConta[tipoLancamento])
 			)
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: Totais
 		lineageTag: 73a61fba-6a0b-493c-9876-0760c36589a7
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -84,6 +88,7 @@ table _medidas
 			)
 			```
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
 		lineageTag: 213af72e-53c7-41bc-a55c-f4e371538555
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -111,6 +116,7 @@ table _medidas
 			)
 			```
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
 		lineageTag: 252cc687-525e-4e78-80b9-34fc85b88396
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -123,6 +129,7 @@ table _medidas
 			    [$ Previsto]
 			)
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
 		lineageTag: 7ab8207b-7ac8-4739-88d0-ab829a00e787
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -138,6 +145,7 @@ table _medidas
 			    ABS(vMeta)
 			)
 		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: DRE
 		lineageTag: 10dea740-97bb-4123-bfb1-0139aabbedf9
 
 	measure '$ Realizado YDT' =
@@ -147,6 +155,7 @@ table _medidas
 			    DATESYTD(dCalendario[Data])
 			)
 		formatString: #,0
+		displayFolder: DRE
 		lineageTag: 082e588a-1134-4506-aa84-e61eb235caaf
 
 	measure '$ Meta YDT' =
@@ -156,6 +165,7 @@ table _medidas
 			    DATESYTD(dCalendario[Data])
 			)
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
 		lineageTag: 7b8dd6b0-ae7d-4aec-8a8d-5964be7e5b9c
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
@@ -171,16 +181,19 @@ table _medidas
 			    ABS(vMeta)
 			)
 		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: DRE
 		lineageTag: bccd81a1-caf5-48c8-a3e0-62ca2a73832c
 
 	measure 'KPI Flag Mês' = ```
 			IF([% Meta vs Realizado] < 0, 1, 0) 
 			```
 		formatString: 0
+		displayFolder: Storytelling
 		lineageTag: d9b4f46d-9b6c-46ac-a940-746796188658
 
 	measure 'KPI Flag YDT' = IF([% Meta vs Realizado YDT] < 0, 1, 0)
 		formatString: 0
+		displayFolder: Storytelling
 		lineageTag: f8d5b590-5964-41c0-857e-54d398ff1ea6
 
 	measure 'KPI Flag' =
@@ -189,7 +202,258 @@ table _medidas
 			    [KPI Flag Mês] = 1 && [KPI Flag YDT] = 1,
 			    "🚩"
 			)
+		displayFolder: Storytelling
 		lineageTag: dedb485b-4d96-4eff-80e2-8d096a15b272
+
+	measure '$ Realizado Receita Bruta' =
+			
+			CALCULATE(
+			    [$ Realizado],
+			    dEstruturaDRE[index] = 1
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
+		lineageTag: 3a893c67-a791-4b0f-9654-37b2acb455b4
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado Margem de Contribuição' =
+			
+			CALCULATE(
+			    [$ Realizado],
+			    dEstruturaDRE[index] = 5
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
+		lineageTag: c8a5de57-d8d8-43de-9b57-eea257fb4375
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado Despesas' =
+			
+			CALCULATE(
+			    [$ Realizado] * -1,
+			    dEstruturaDRE[index] = 6
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
+		lineageTag: 56640cd8-c18a-4b6d-867c-41795ebbf55a
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado Receita Liquida' =
+			
+			CALCULATE(
+			    [$ Realizado],
+			    dEstruturaDRE[index] = 13
+			)
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		displayFolder: DRE
+		lineageTag: 21ba55d9-185f-45a8-848e-c8e33fba94fc
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado Receita Bruta Fixa' =
+			
+			CALCULATE(
+			    [$ Realizado Receita Bruta],
+			    ALLSELECTED(dPlanoConta)
+			)
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: DRE
+		lineageTag: 03b6e59f-f028-4324-91d1-bc184c7acef4
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% AV' =
+			
+			DIVIDE(
+			    [$ Realizado],
+			    [$ Realizado Receita Bruta Fixa]
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: DRE
+		lineageTag: 7f0c9f47-a0d5-4d88-a00e-5dbc9c0f9df3
+
+	measure '% AV Margem Contribuição' =
+			
+			DIVIDE(
+			    [$ Realizado Margem de Contribuição],
+			    [$ Realizado Receita Bruta Fixa]
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: f27e9f89-29e7-4722-9e0a-28edf00a5399
+
+	measure '% AV Despesa Operacional' =
+			
+			DIVIDE(
+			    [$ Realizado Despesas],
+			    [$ Realizado Receita Bruta Fixa]
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: a9d818be-21af-4fa2-af01-8f5e9e64dfcf
+
+	measure '% AV Receita Líquida' =
+			
+			DIVIDE(
+			    [$ Realizado Receita Liquida],
+			    [$ Realizado Receita Bruta Fixa]
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: d495b4df-28d1-42cb-a8b2-c959c3b416ab
+
+	measure 'Cartão Receita Bruta Melhor Mês do Ano' =
+			
+			CALCULATE(
+			    TOPN(
+			        1,
+			        ALL(dCalendario[MesAno]),
+			        [$ Realizado Receita Bruta]
+			    ),
+			    ALL(dCalendario),
+			    VALUES(dCalendario[Ano])
+			)
+		displayFolder: Storytelling
+		lineageTag: 35ccf84d-3f81-40ce-8b5d-d40f9c5d8d54
+
+	measure '% Meta vs Realizado Receita Bruta' =
+			
+			CALCULATE(
+			    [% Meta vs Realizado],
+			    dEstruturaDRE[index] = 1
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: bf93c1c2-a62b-4426-9076-d8fec8e1d35a
+
+	measure '% Meta vs Realizado Margem de Contribuição' =
+			
+			CALCULATE(
+			    [% Meta vs Realizado],
+			    dEstruturaDRE[index] = 5
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: 98341dd8-a22d-4480-86cb-27648a21d7d3
+
+	measure '% Meta vs Realizado Despesas Operacionais' =
+			
+			CALCULATE(
+			    [% Meta vs Realizado],
+			    dEstruturaDRE[index] = 6
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: 2d8bd379-6099-4ab6-b27c-3feed3a9dcb9
+
+	measure '% Meta vs Realizado Receita Liquida' =
+			
+			CALCULATE(
+			    [% Meta vs Realizado],
+			    dEstruturaDRE[index] = 13
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Storytelling
+		lineageTag: 5df49d1b-c66c-49a2-bcf7-d3a288f2f342
+
+	measure 'Titulo Meta' =
+			
+			"🎯 " &
+			VALUES(auxMeta[auxMeta]) &
+			":"
+		displayFolder: Storytelling
+		lineageTag: de6a7e60-0be7-4f97-98b7-63c0671b2d14
+
+	measure 'Cartão Meta vs Realizado Despesas Operacionais' =
+			
+			FORMAT(
+			    [% Meta vs Realizado Despesas Operacionais],
+			    "+0.0% ✔; -0.0% ✖"
+			)
+		displayFolder: Storytelling
+		lineageTag: 0b0a6547-9053-4e6e-9fd0-f4298c80e3a3
+
+	measure 'Cartão Meta vs Realizado Margem Contribuição' =
+			
+			FORMAT(
+			    [% Meta vs Realizado Margem de Contribuição],
+			    "+0.0% ✔; -0.0% ✖"
+			)
+		displayFolder: Storytelling
+		lineageTag: 66855c51-ec11-4a07-8418-047049557e01
+
+	measure 'Cartão Meta vs Realizado Receita Bruta' =
+			
+			FORMAT(
+			    [% Meta vs Realizado Receita Bruta],
+			    "+0.0% ✔; -0.0% ✖"
+			)
+		displayFolder: Storytelling
+		lineageTag: 6e6dfe83-1937-4e71-8460-e92401be5dc9
+
+	measure 'Cartão Meta vs Realizado Receita Líquida' =
+			
+			FORMAT(
+			    [% Meta vs Realizado Receita Liquida],
+			    "+0.0% ✔; -0.0% ✖"
+			)
+		displayFolder: Storytelling
+		lineageTag: 5ff63f5f-714c-4c07-844f-20972ba46e8d
+
+	measure 'Cartão Valor Meta Receita Bruta' = ```
+			
+			VAR meta = 
+			CALCULATE(
+			    [$ Meta],
+			    dEstruturaDRE[index] = 1
+			)
+			RETURN
+			FORMAT(meta, "R$ 0,0")
+			```
+		displayFolder: Storytelling
+		lineageTag: d4ac794b-901b-45e7-a709-fa915f69b75d
+
+	measure 'Cartão Valor Meta Margem Contribuição' = ```
+			
+			VAR meta = 
+			CALCULATE(
+			    [$ Meta],
+			    dEstruturaDRE[index] = 5
+			)
+			RETURN
+			FORMAT(meta, "R$ 0,0")
+			```
+		displayFolder: Storytelling
+		lineageTag: e99e05df-f78d-4d70-9700-ec6ea5a717cd
+
+	measure 'Cartão Valor Meta Despesas Operacionais' = ```
+			
+			VAR meta = 
+			CALCULATE(
+			    [$ Meta]*-1,
+			    dEstruturaDRE[index] = 6
+			)
+			RETURN
+			FORMAT(meta, "R$ 0,0")
+			```
+		displayFolder: Storytelling
+		lineageTag: 5921d186-e662-47d3-a4aa-f357ccaf9d06
+
+	measure 'Cartão Valor Meta Receita Líquida' = ```
+			
+			VAR meta = 
+			CALCULATE(
+			    [$ Meta],
+			    dEstruturaDRE[index] = 13
+			)
+			RETURN
+			FORMAT(meta, "R$ 0,0")
+			```
+		displayFolder: Storytelling
+		lineageTag: 5d1fcba2-3522-4c71-aabd-e9affdf10c10
 
 	partition _medidas = m
 		mode: import
