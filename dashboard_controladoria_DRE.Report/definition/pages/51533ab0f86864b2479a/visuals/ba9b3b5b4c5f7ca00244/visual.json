@@ -89,7 +89,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''_medidas''[$ Previsto]'"
+                                "Value": "'''_medidas''[$ Orçado]'"
                               }
                             }
                           ]
@@ -117,7 +117,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''_medidas''[$ Previsto]'"
+                                      "Value": "'''_medidas''[$ Orçado]'"
                                     }
                                   }
                                 ]
@@ -141,7 +141,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Previsto"
+                            "0": "Orçado"
                           }
                         ]
                       }
