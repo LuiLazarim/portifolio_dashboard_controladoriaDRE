@@ -4,7 +4,7 @@
   "position": {
     "x": 1394.3396226415093,
     "y": 128.94333526141344,
-    "z": 1,
+    "z": 2000,
     "height": 80,
     "width": 160
   },
@@ -97,7 +97,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'2023'"
+                                "Value": "'Ano Atual'"
                               }
                             }
                           ]
@@ -122,6 +122,26 @@
               }
             },
             "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ano'"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"

@@ -5,6 +5,64 @@
   "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "beb0313a4680d802fb8c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dCalendario"
+              }
+            },
+            "Property": "dataPassada?"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "dCalendario",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "dataPassada?"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "true"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
+  },
   "objects": {
     "displayArea": [
       {
@@ -43,7 +101,7 @@
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Normal'"
+                    "Value": "'Fill'"
                   }
                 }
               }
@@ -51,6 +109,109 @@
           }
         }
       }
+    ],
+    "filterCard": [
+      {
+        "properties": {
+          "border": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        },
+        "selector": {
+          "id": "Available"
+        }
+      }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "5ff0934e2b98debf9139",
+      "target": "40a05558944a3cb1d2b7",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5ff0934e2b98debf9139",
+      "target": "2dea031bdff9fc47d32c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5ff0934e2b98debf9139",
+      "target": "1282e5557dbe2e67cfbf",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1c9804c75d3ddbe3dab0",
+      "target": "40a05558944a3cb1d2b7",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1c9804c75d3ddbe3dab0",
+      "target": "2dea031bdff9fc47d32c",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1c9804c75d3ddbe3dab0",
+      "target": "1282e5557dbe2e67cfbf",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1c9804c75d3ddbe3dab0",
+      "target": "667ff00838e95a05ec2d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "40a05558944a3cb1d2b7",
+      "target": "1c9804c75d3ddbe3dab0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "40a05558944a3cb1d2b7",
+      "target": "667ff00838e95a05ec2d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "40a05558944a3cb1d2b7",
+      "target": "653aca74363de2e94412",
+      "type": "NoFilter"
+    },
+    {
+      "source": "40a05558944a3cb1d2b7",
+      "target": "8859c92206ed6c37e76a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2dea031bdff9fc47d32c",
+      "target": "1c9804c75d3ddbe3dab0",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2dea031bdff9fc47d32c",
+      "target": "667ff00838e95a05ec2d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "2dea031bdff9fc47d32c",
+      "target": "653aca74363de2e94412",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1282e5557dbe2e67cfbf",
+      "target": "667ff00838e95a05ec2d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1282e5557dbe2e67cfbf",
+      "target": "653aca74363de2e94412",
+      "type": "NoFilter"
+    },
+    {
+      "source": "1282e5557dbe2e67cfbf",
+      "target": "1c9804c75d3ddbe3dab0",
+      "type": "NoFilter"
+    }
+  ]
 }

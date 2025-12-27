@@ -22,7 +22,7 @@ table _medidas
 			VAR vAcumulado = 
 			CALCULATE(
 			    [$ Total Lançamentos],
-			    ALLSELECTED(dEstruturaDRE),
+			    ALL(dEstruturaDRE),
 			    VALUES(dEstruturaDRE[empresa]),
 			    dEstruturaDRE[index] < vIndex
 			)
@@ -139,11 +139,13 @@ table _medidas
 			VAR vMeta = [$ Meta]
 			VAR vRealizado = [$ Realizado]
 			VAR vDif = vRealizado - vMeta
-			RETURN
+			VAR vResultado =
 			DIVIDE(
 			    vDif,
 			    ABS(vMeta)
 			)
+			RETURN
+			IF(vRealizado, vResultado)
 		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: DRE
 		lineageTag: 10dea740-97bb-4123-bfb1-0139aabbedf9
@@ -454,6 +456,141 @@ table _medidas
 			```
 		displayFolder: Storytelling
 		lineageTag: 5d1fcba2-3522-4c71-aabd-e9affdf10c10
+
+	measure 'Título Página' = ```
+			
+			VAR vFilial =
+			CONCATENATEX(
+			    VALUES(dEstruturaDRE[empresa]),
+			    dEstruturaDRE[empresa],
+			    ", "
+			)
+			VAR vMesAno = SELECTEDVALUE(dCalendario[MesAno])
+			RETURN
+			"Realizado vs " &
+			VALUES(auxMeta[auxMeta]) &
+			" para " &
+			vFilial &
+			" em " &
+			vMesAno
+			
+			```
+		displayFolder: Storytelling
+		lineageTag: 50f945fe-4ac4-4a6e-a79e-be31fc7a36a4
+
+	measure 'Titulo analise temporal' =
+			
+			VAR vContaDRE = SELECTEDVALUE(dEstruturaDRE[contaGerencial])
+			VAR vContaN1 = SELECTEDVALUE(dPlanoConta[descricaoN1])
+			VAR vContaN2 = SELECTEDVALUE(dPlanoConta[descricaoN2])
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    NOT ISBLANK(vContaN2), vContaN2,
+			    NOT ISBLANK(vContaN1), vContaN1,
+			    NOT ISBLANK(vContaDRE), vContaDRE,
+			    "= RESULTADO LÍQUIDO DO EXERCÍCIO"
+			)
+		displayFolder: Storytelling
+		lineageTag: cc70b6c7-1540-4342-bf09-f288ffe643e8
+
+	measure 'Subtitulo analise temporal' =
+			
+			VAR vMesesNegativos =
+			CALCULATE(
+			    COUNTROWS(
+			        FILTER(
+			            ALL(dCalendario[MesAno]),
+			            [% Meta vs Realizado] < 0
+			        )
+			    ),
+			    ALL(dCalendario),
+			    VALUES(dCalendario[Ano])
+			)
+			VAR vMesesPositivos =
+			CALCULATE(
+			    COUNTROWS(
+			        FILTER(
+			            ALL(dCalendario[MesAno]),
+			            [% Meta vs Realizado] >= 0 && NOT(ISBLANK([% Meta vs Realizado]))
+			        )
+			    ),
+			    ALL(dCalendario),
+			    VALUES(dCalendario[Ano])
+			)
+			VAR vAno = SELECTEDVALUE(dCalendario[Ano])
+			RETURN
+			"Em " &
+			vAno &
+			" batemos a meta em " &
+			vMesesPositivos &
+			" meses e ficamos abaixo do " &
+			VALUES(auxMeta[auxMeta]) &
+			" em " &
+			vMesesNegativos &
+			" meses:"
+		displayFolder: Storytelling
+		lineageTag: 8c1ee51c-ec5c-4a14-ac51-358bd668960c
+
+	measure 'Subtitulo Analise Temporal Meta' = ```
+			
+			VAR vPiorMes =
+			CALCULATE(
+			    TOPN(
+			        1,
+			        FILTER(
+			            VALUES(dCalendario[MesAno]),
+			            NOT(ISBLANK([$ Realizado]))
+			        ),
+			        [% Meta vs Realizado],
+			        ASC
+			    ),
+			    ALL(dCalendario),
+			    VALUES(dCalendario[Ano])
+			)
+			VAR vValorPiorMes = 
+			CALCULATE(
+			    [% Meta vs Realizado],
+			    dCalendario[MesAno] = vPiorMes
+			)
+			RETURN
+			"... onde o pior mês foi " &
+			vPiorMes &
+			", comuma diferença de " &
+			FORMAT(vValorPiorMes, "0.0%") &
+			" em relação ao " &
+			VALUES(auxMeta[auxMeta]) &
+			":"
+			```
+		displayFolder: Storytelling
+		lineageTag: b9358014-8a8e-4da5-8788-a4b820e4ec96
+
+	measure 'Subtitulo Analise Temporal Acumulado' = ```
+			
+			VAR vRealizado = FORMAT([$ Realizado YDT], "R$ 0,0")
+			VAR vDif = FORMAT([% Meta vs Realizado YDT], "0.0%;0.0%")
+			VAR vAno = SELECTEDVALUE(dCalendario[Ano])
+			VAR vResultadoDif = 
+			SWITCH(
+			    TRUE(),
+			    [% Meta vs Realizado YDT] > 0, " acima do ",
+			    [% Meta vs Realizado YDT] = 0, " igual ao ",
+			    [% Meta vs Realizado YDT] < 0, " abaixo do ",
+			    BLANK()
+			)
+			RETURN
+			"No acumulado de " &
+			vAno &
+			" o Realizado foi de " &
+			vRealizado &
+			" (" &
+			vDif &
+			vResultadoDif &
+			VALUES(auxMeta[auxMeta]) &
+			"):"
+			```
+		displayFolder: Storytelling
+		lineageTag: bf166ed6-8b96-4813-9eaa-95097408a61d
 
 	partition _medidas = m
 		mode: import

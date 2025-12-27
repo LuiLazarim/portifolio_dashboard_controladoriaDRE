@@ -39,6 +39,9 @@ table dCalendario
 		lineageTag: 6cca0355-7323-4d84-9ac4-cdc1a931617c
 		summarizeBy: none
 		sourceColumn: MesAbre
+		sortByColumn: MesNum
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -234,8 +237,8 @@ table dCalendario
 				                Date.DayOfWeek(_),
 				                Date.DayOfWeekName(_),
 				                if _ <= MaiorData then true else false,
-				                if Date.IsInCurrentYear(_) then "Ano Atual" else Text.From(Date.Year(_)),
-				                if Date.IsInCurrentYear(_) and Date.IsInCurrentMonth(_) then "Mês Atual" else Text.Proper( Date.MonthName(_))
+				                if Date.Year(_) = Date.Year(MaiorData) then "Ano Atual" else Text.From(Date.Year(_)),
+				                if Date.Year(_) = Date.Year(MaiorData) and Date.Month(_) = Date.Month(MaiorData) then "Mês Atual" else Text.Proper( Date.MonthName(_))
 				            }
 				
 				        )

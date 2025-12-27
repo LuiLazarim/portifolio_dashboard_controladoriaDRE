@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "1c9804c75d3ddbe3dab0",
   "position": {
-    "x": 55.714285714285715,
-    "y": 421.42857142857144,
-    "z": 0,
-    "height": 617.14285714285722,
-    "width": 1148.5714285714287
+    "x": 54.716981132075468,
+    "y": 449.05660377358487,
+    "z": 1000,
+    "height": 569.81132075471692,
+    "width": 1137.7358490566037
   },
   "visual": {
     "visualType": "pivotTable",
@@ -285,7 +285,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "11D"
                 }
               }
             },
@@ -660,7 +660,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "322.07997596286725D"
+                  "Value": "333.39809428596413D"
                 }
               }
             }
@@ -670,15 +670,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "126.4772107644501D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -708,15 +700,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "120.04652441542088D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -784,15 +768,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "119.33416795798631D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -822,15 +798,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "133.35408883122486D"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -981,7 +949,21 @@
             "titleAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Left'"
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'growToFit'"
                 }
               }
             }
@@ -1133,7 +1115,7 @@
             "gridHorizontal": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -1211,7 +1193,7 @@
             "gridHorizontalWeight": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
                 }
               }
             }

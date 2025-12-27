@@ -4,7 +4,7 @@
   "position": {
     "x": 1233.9622641509434,
     "y": 128.94333526141344,
-    "z": 4,
+    "z": 5000,
     "height": 80,
     "width": 160,
     "tabOrder": 1
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "auxMeta.auxMeta",
-              "nativeQueryRef": "auxMeta",
-              "active": true
+              "nativeQueryRef": "Meta",
+              "active": true,
+              "displayName": "Meta"
             }
           ]
         }
@@ -88,7 +89,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''_medidas''[$ Orçado]'"
+                                "Value": "'''_medidas''[$ Previsto]'"
                               }
                             }
                           ]
@@ -116,7 +117,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''_medidas''[$ Orçado]'"
+                                      "Value": "'''_medidas''[$ Previsto]'"
                                     }
                                   }
                                 ]
@@ -140,7 +141,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Orçado"
+                            "0": "Previsto"
                           }
                         ]
                       }
@@ -156,6 +157,19 @@
         {
           "properties": {
             "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
