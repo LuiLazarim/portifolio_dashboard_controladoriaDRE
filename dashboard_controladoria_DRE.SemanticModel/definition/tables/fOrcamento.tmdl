@@ -30,6 +30,22 @@ table fOrcamento
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Column4
+		dataType: string
+		lineageTag: 22c636ff-7110-43c7-8536-99dd63c15ffd
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: 0f1d69ba-4c1d-4b7e-8297-fd00837b1fb8
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fOrcamento = m
 		mode: import
 		queryGroup: fato

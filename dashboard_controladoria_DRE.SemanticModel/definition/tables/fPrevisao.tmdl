@@ -30,6 +30,22 @@ table fPrevisao
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Column4
+		dataType: string
+		lineageTag: 0fdb60ee-827b-4f95-8429-a9347a2162f9
+		summarizeBy: none
+		sourceColumn: Column4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column5
+		dataType: string
+		lineageTag: a7da79b4-b0cb-473e-880e-c75f0f519e8d
+		summarizeBy: none
+		sourceColumn: Column5
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fPrevisao = m
 		mode: import
 		queryGroup: fato
