@@ -68,11 +68,6 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "layout_dre6675239036821884.svg",
-          "path": "layout_dre6675239036821884.svg",
-          "type": "Image"
-        },
-        {
           "name": "moedas9681415582356592.png",
           "path": "moedas9681415582356592.png",
           "type": "Image"
@@ -96,6 +91,11 @@
           "name": "Cafeteria_Premium_Theme8125649255760804.json",
           "path": "Cafeteria_Premium_Theme8125649255760804.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "layout_dre46894645767940646.svg",
+          "path": "layout_dre46894645767940646.svg",
+          "type": "Image"
         }
       ]
     }
