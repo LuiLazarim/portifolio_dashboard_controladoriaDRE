@@ -3133,6 +3133,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
+			        },
+			        {
+			          "Meta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "NameType": "Name"
@@ -3468,23 +3478,601 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "entity__medida.realizado_receita_bruta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "$ Realizado Receita Bruta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "$ realizado receita bruta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dollar realizado receita bruta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.realizado_margem_de_contribuição": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "$ Realizado Margem de Contribuição"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "$ realizado margem de contribuição": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dollar realizado margem de contribuição": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.realizado_despesas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "$ Realizado Despesas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "$ realizado despesas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dollar realizado despesa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.realizado_receita_liquida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "$ Realizado Receita Liquida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "$ realizado receita liquida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dollar realizado receita liquida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.realizado_receita_bruta_fixa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "$ Realizado Receita Bruta Fixa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "$ realizado receita bruta fixa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dollar realizado receita bruta fixa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.av": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% AV"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% av": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage av": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct av": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.AV_margem_contribuição": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% AV Margem Contribuição"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% AV margem contribuição": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage av margem contribuição": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct av margem contribuição": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.AV_despesa_operacional": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% AV Despesa Operacional"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% AV despesa operacional": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage av despesa operacional": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct av despesa operacional": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.AV_receita_líquida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% AV Receita Líquida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% AV receita líquida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage av receita líquida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct av receita líquida": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_receita_bruta_melhor_mês_do_ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Receita Bruta Melhor Mês do Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão receita bruta melhor mês do ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.meta_vs_realizado_receita_bruta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% Meta vs Realizado Receita Bruta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% meta vs realizado receita bruta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% Meta vs Realizado Margem de Contribuição"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% meta vs realizado margem de contribuição": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% Meta vs Realizado Despesas Operacionais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% meta vs realizado despesas operacionais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.meta_vs_realizado_receita_liquida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% Meta vs Realizado Receita Liquida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% meta vs realizado receita liquida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.titulo_meta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Titulo Meta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titulo meta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Meta vs Realizado Despesas Operacionais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão meta vs realizado despesas operacionais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Meta vs Realizado Margem Contribuição"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão meta vs realizado margem contribuição": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Meta vs Realizado Receita Bruta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão meta vs realizado receita bruta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Meta vs Realizado Receita Líquida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão meta vs realizado receita líquida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_valor_meta_receita_bruta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Valor Meta Receita Bruta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão valor meta receita bruta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_valor_meta_margem_contribuição": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Valor Meta Margem Contribuição"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão valor meta margem contribuição": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_valor_meta_despesas_operacionais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Valor Meta Despesas Operacionais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão valor meta despesas operacionais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cartão_valor_meta_receita_líquida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cartão Valor Meta Receita Líquida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cartão valor meta receita líquida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.título_página": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Título Página"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "título página": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.titulo_analise_temporal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Titulo analise temporal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titulo analise temporal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.subtitulo_analise_temporal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Subtitulo analise temporal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "subtitulo analise temporal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.subtitulo_analise_temporal_meta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Subtitulo Analise Temporal Meta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "subtitulo analise temporal meta": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.subtitulo_analise_temporal_acumulado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Subtitulo Analise Temporal Acumulado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "subtitulo analise temporal acumulado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "d_calendario_inicio_me_hierarquia_de_data_has_d_calendario_inicio_me_mê": {
+			    "d_estrutura_DRE_has_entity__medida_AV_margem_contribuição": {
 			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
+			        "ConceptualEntity": "dEstruturaDRE"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.inicio_me.hierarquia_de_data": {
+			        "d_estrutura_DRE": {
 			          "Target": {
-			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
+			            "Entity": "d_estrutura_DRE"
 			          }
 			        },
-			        "d_calendario.inicio_me.mê": {
+			        "entity__medida.AV_margem_contribuição": {
 			          "Target": {
-			            "Entity": "d_calendario.inicio_me.mê"
+			            "Entity": "entity__medida.AV_margem_contribuição"
 			          }
 			        }
 			      },
@@ -3492,481 +4080,19 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
+			              "Role": "d_estrutura_DRE"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.inicio_me.mê"
+			              "Role": "entity__medida.AV_margem_contribuição"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "d_estrutura_DREs_have__AV_margem_contribuição"
 			        }
 			      ]
 			    },
-			    "d_calendario_inicio_me_hierarquia_de_data_has_d_calendario_inicio_me_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.inicio_me.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
-			          }
-			        },
-			        "d_calendario.inicio_me.trimestre": {
-			          "Target": {
-			            "Entity": "d_calendario.inicio_me.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.inicio_me.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
-			        }
-			      ]
-			    },
-			    "d_calendario_inicio_me_hierarquia_de_data_has_d_calendario_inicio_me_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.inicio_me.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
-			          }
-			        },
-			        "d_calendario.inicio_me.ano": {
-			          "Target": {
-			            "Entity": "d_calendario.inicio_me.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.inicio_me.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
-			        }
-			      ]
-			    },
-			    "d_calendario_inicio_me_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.inicio_me": {
-			          "Target": {
-			            "Entity": "d_calendario.inicio_me"
-			          }
-			        },
-			        "d_calendario.inicio_me.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.inicio_me"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "inicio_me_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_mê_has_d_calendario_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.mê": {
-			          "Target": {
-			            "Entity": "d_calendario.data.mê"
-			          }
-			        },
-			        "d_calendario.data.dia": {
-			          "Target": {
-			            "Entity": "d_calendario.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.mê"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.dia"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "d_calendario.data.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "d_calendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_trimestre_has_d_calendario_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.trimestre": {
-			          "Target": {
-			            "Entity": "d_calendario.data.trimestre"
-			          }
-			        },
-			        "d_calendario.data.mê": {
-			          "Target": {
-			            "Entity": "d_calendario.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.mê"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "d_calendario.data.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "d_calendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_ano_has_d_calendario_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.ano": {
-			          "Target": {
-			            "Entity": "d_calendario.data.ano"
-			          }
-			        },
-			        "d_calendario.data.trimestre": {
-			          "Target": {
-			            "Entity": "d_calendario.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.ano"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "d_calendario.data.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "d_calendario.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "d_calendario.data.dia": {
-			          "Target": {
-			            "Entity": "d_calendario.data.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "d_calendario.data.mê": {
-			          "Target": {
-			            "Entity": "d_calendario.data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "d_calendario.data.trimestre": {
-			          "Target": {
-			            "Entity": "d_calendario.data.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.data.hierarquia_de_data"
-			          }
-			        },
-			        "d_calendario.data.ano": {
-			          "Target": {
-			            "Entity": "d_calendario.data.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
-			        }
-			      ]
-			    },
-			    "d_calendario_data_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "dCalendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.data": {
-			          "Target": {
-			            "Entity": "d_calendario.data"
-			          }
-			        },
-			        "d_calendario.data.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "d_calendario.data.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.data"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.data.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "f_lancamento_has_d_plano_conta": {
+			    "f_lancamento_has_entity__medida_av": {
 			      "Binding": {
 			        "ConceptualEntity": "fLancamentos"
 			      },
@@ -3977,9 +4103,9 @@ cultureInfo pt-BR
 			            "Entity": "f_lancamento"
 			          }
 			        },
-			        "d_plano_conta": {
+			        "entity__medida.av": {
 			          "Target": {
-			            "Entity": "d_plano_conta"
+			            "Entity": "entity__medida.av"
 			          }
 			        }
 			      },
@@ -3990,280 +4116,16 @@ cultureInfo pt-BR
 			              "Role": "f_lancamento"
 			            },
 			            "Object": {
-			              "Role": "d_plano_conta"
+			              "Role": "entity__medida.av"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "f_lancamentos_have_d_plano_contas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_plano_conta"
-			            },
-			            "Object": {
-			              "Role": "f_lancamento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_plano_contas_have_f_lancamentos"
+			          "ID": "f_lancamentos_have__av"
 			        }
 			      ]
 			    },
-			    "f_lancamento_has_d_calendario": {
-			      "Binding": {
-			        "ConceptualEntity": "fLancamentos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_lancamento": {
-			          "Target": {
-			            "Entity": "f_lancamento"
-			          }
-			        },
-			        "d_calendario": {
-			          "Target": {
-			            "Entity": "d_calendario"
-			          },
-			          "Nouns": [
-			            {
-			              "competencia data": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_lancamento"
-			            },
-			            "Object": {
-			              "Role": "d_calendario"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_lancamentos_have_d_calendarios"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario"
-			            },
-			            "Object": {
-			              "Role": "f_lancamento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_calendarios_have_f_lancamentos"
-			        }
-			      ]
-			    },
-			    "f_previsao_has_d_plano_conta": {
-			      "Binding": {
-			        "ConceptualEntity": "fPrevisao"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_previsao": {
-			          "Target": {
-			            "Entity": "f_previsao"
-			          }
-			        },
-			        "d_plano_conta": {
-			          "Target": {
-			            "Entity": "d_plano_conta"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_previsao"
-			            },
-			            "Object": {
-			              "Role": "d_plano_conta"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_previsaos_have_d_plano_contas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_plano_conta"
-			            },
-			            "Object": {
-			              "Role": "f_previsao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_plano_contas_have_f_previsaos"
-			        }
-			      ]
-			    },
-			    "f_previsao_has_d_calendario": {
-			      "Binding": {
-			        "ConceptualEntity": "fPrevisao"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_previsao": {
-			          "Target": {
-			            "Entity": "f_previsao"
-			          }
-			        },
-			        "d_calendario": {
-			          "Target": {
-			            "Entity": "d_calendario"
-			          },
-			          "Nouns": [
-			            {
-			              "competencia data": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_previsao"
-			            },
-			            "Object": {
-			              "Role": "d_calendario"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_previsaos_have_d_calendarios"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario"
-			            },
-			            "Object": {
-			              "Role": "f_previsao"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_calendarios_have_f_previsaos"
-			        }
-			      ]
-			    },
-			    "f_orcamento_has_d_plano_conta": {
-			      "Binding": {
-			        "ConceptualEntity": "fOrcamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_orcamento": {
-			          "Target": {
-			            "Entity": "f_orcamento"
-			          }
-			        },
-			        "d_plano_conta": {
-			          "Target": {
-			            "Entity": "d_plano_conta"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_orcamento"
-			            },
-			            "Object": {
-			              "Role": "d_plano_conta"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_orcamentos_have_d_plano_contas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_plano_conta"
-			            },
-			            "Object": {
-			              "Role": "f_orcamento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_plano_contas_have_f_orcamentos"
-			        }
-			      ]
-			    },
-			    "f_orcamento_has_d_calendario": {
-			      "Binding": {
-			        "ConceptualEntity": "fOrcamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "f_orcamento": {
-			          "Target": {
-			            "Entity": "f_orcamento"
-			          }
-			        },
-			        "d_calendario": {
-			          "Target": {
-			            "Entity": "d_calendario"
-			          },
-			          "Nouns": [
-			            {
-			              "competencia data": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "f_orcamento"
-			            },
-			            "Object": {
-			              "Role": "d_calendario"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "f_orcamentos_have_d_calendarios"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario"
-			            },
-			            "Object": {
-			              "Role": "f_orcamento"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "d_calendarios_have_f_orcamentos"
-			        }
-			      ]
-			    },
-			    "d_plano_conta_has_d_estrutura_DRE": {
+			    "d_plano_conta_has_entity__medida_av": {
 			      "Binding": {
 			        "ConceptualEntity": "dPlanoConta"
 			      },
@@ -4274,9 +4136,9 @@ cultureInfo pt-BR
 			            "Entity": "d_plano_conta"
 			          }
 			        },
-			        "d_estrutura_DRE": {
+			        "entity__medida.av": {
 			          "Target": {
-			            "Entity": "d_estrutura_DRE"
+			            "Entity": "entity__medida.av"
 			          }
 			        }
 			      },
@@ -4287,25 +4149,540 @@ cultureInfo pt-BR
 			              "Role": "d_plano_conta"
 			            },
 			            "Object": {
-			              "Role": "d_estrutura_DRE"
+			              "Role": "entity__medida.av"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_plano_contas_have_d_estrutura_DREs"
+			          "ID": "d_plano_contas_have__av"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_av": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
 			        },
+			        "entity__medida.av": {
+			          "Target": {
+			            "Entity": "entity__medida.av"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "d_estrutura_DRE"
 			            },
 			            "Object": {
-			              "Role": "d_plano_conta"
+			              "Role": "entity__medida.av"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "d_estrutura_DREs_have_d_plano_contas"
+			          "ID": "d_estrutura_DREs_have__av"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_realizado_receita_bruta_fixa": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.realizado_receita_bruta_fixa": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_bruta_fixa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_bruta_fixa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__realizado_receita_bruta_fixa"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_realizado_receita_bruta_fixa": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.realizado_receita_bruta_fixa": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_bruta_fixa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_bruta_fixa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__realizado_receita_bruta_fixa"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_realizado_receita_bruta_fixa": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.realizado_receita_bruta_fixa": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_bruta_fixa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_bruta_fixa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__realizado_receita_bruta_fixa"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_realizado_despesas": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.realizado_despesas": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_despesas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_despesas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__realizado_despesas"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_realizado_despesas": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.realizado_despesas": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_despesas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_despesas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__realizado_despesas"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_realizado_despesas": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.realizado_despesas": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_despesas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_despesas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__realizado_despesas"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__realizado_receita_bruta"
 			        }
 			      ]
 			    },
@@ -7474,6 +7851,4177 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "ids_are_names_IDs_of_d_estrutura_DREs"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_AV_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.AV_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__AV_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_AV_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.AV_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__AV_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_AV_despesa_operacional": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.AV_despesa_operacional": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_despesa_operacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_despesa_operacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__AV_despesa_operacional"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_AV_despesa_operacional": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.AV_despesa_operacional": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_despesa_operacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_despesa_operacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__AV_despesa_operacional"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_AV_despesa_operacional": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.AV_despesa_operacional": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_despesa_operacional"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_despesa_operacional"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__AV_despesa_operacional"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_AV_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.AV_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__AV_receita_líquida"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_AV_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.AV_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__AV_receita_líquida"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_AV_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.AV_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.AV_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.AV_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__AV_receita_líquida"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_receita_bruta_melhor_mês_do_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_receita_bruta_melhor_mês_do_ano": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_receita_bruta_melhor_mês_do_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_receita_bruta_melhor_mês_do_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_receita_bruta_melhor_mês_do_ano"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_receita_bruta_melhor_mês_do_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_receita_bruta_melhor_mês_do_ano": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_receita_bruta_melhor_mês_do_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_receita_bruta_melhor_mês_do_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_receita_bruta_melhor_mês_do_ano"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_cartão_receita_bruta_melhor_mês_do_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.cartão_receita_bruta_melhor_mês_do_ano": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_receita_bruta_melhor_mês_do_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_receita_bruta_melhor_mês_do_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_cartão_receita_bruta_melhor_mês_do_ano"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have__meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have__meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have__meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_meta_vs_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have__meta_vs_realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_meta_vs_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__meta_vs_realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_meta_vs_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__meta_vs_realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_meta_vs_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__meta_vs_realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_meta_vs_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have__meta_vs_realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_meta_vs_realizado_margem_de_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_margem_de_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_margem_de_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have__meta_vs_realizado_margem_de_contribuição"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have__meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have__meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have__meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_meta_vs_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have__meta_vs_realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_meta_vs_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have__meta_vs_realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_meta_vs_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have__meta_vs_realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_meta_vs_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have__meta_vs_realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_meta_vs_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have__meta_vs_realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_meta_vs_realizado_receita_liquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.meta_vs_realizado_receita_liquida": {
+			          "Target": {
+			            "Entity": "entity__medida.meta_vs_realizado_receita_liquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.meta_vs_realizado_receita_liquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have__meta_vs_realizado_receita_liquida"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_titulo_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.titulo_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.titulo_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.titulo_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_titulo_meta"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_cartão_meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_meta_vs_realizado_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_meta_vs_realizado_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_meta_vs_realizado_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_meta_vs_realizado_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_meta_vs_realizado_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_meta_vs_realizado_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_meta_vs_realizado_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_meta_vs_realizado_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_cartão_meta_vs_realizado_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_cartão_meta_vs_realizado_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_meta_vs_realizado_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_meta_vs_realizado_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_meta_vs_realizado_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_meta_vs_realizado_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_cartão_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_cartão_meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_meta_vs_realizado_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_meta_vs_realizado_receita_bruta"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_meta_vs_realizado_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_meta_vs_realizado_receita_líquida"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_meta_vs_realizado_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_meta_vs_realizado_receita_líquida"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_meta_vs_realizado_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_meta_vs_realizado_receita_líquida"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_cartão_meta_vs_realizado_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_cartão_meta_vs_realizado_receita_líquida"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_meta_vs_realizado_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_meta_vs_realizado_receita_líquida"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_meta_vs_realizado_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_meta_vs_realizado_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_meta_vs_realizado_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_meta_vs_realizado_receita_líquida"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_valor_meta_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_valor_meta_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_valor_meta_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_valor_meta_receita_bruta"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_valor_meta_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_valor_meta_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_valor_meta_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_valor_meta_receita_bruta"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_valor_meta_receita_bruta": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_bruta": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_bruta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_bruta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_valor_meta_receita_bruta"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_valor_meta_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_valor_meta_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_valor_meta_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_valor_meta_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_valor_meta_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_valor_meta_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_valor_meta_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_valor_meta_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_valor_meta_margem_contribuição": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_margem_contribuição": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_margem_contribuição"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_margem_contribuição"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_valor_meta_margem_contribuição"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_valor_meta_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_valor_meta_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_valor_meta_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_valor_meta_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_valor_meta_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_valor_meta_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_valor_meta_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_valor_meta_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_valor_meta_despesas_operacionais": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_despesas_operacionais": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_despesas_operacionais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_valor_meta_despesas_operacionais"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_cartão_valor_meta_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_cartão_valor_meta_receita_líquida"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_cartão_valor_meta_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_cartão_valor_meta_receita_líquida"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_cartão_valor_meta_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_cartão_valor_meta_receita_líquida"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_cartão_valor_meta_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_cartão_valor_meta_receita_líquida"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_cartão_valor_meta_receita_líquida": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.cartão_valor_meta_receita_líquida": {
+			          "Target": {
+			            "Entity": "entity__medida.cartão_valor_meta_receita_líquida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cartão_valor_meta_receita_líquida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_cartão_valor_meta_receita_líquida"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_título_página": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.título_página": {
+			          "Target": {
+			            "Entity": "entity__medida.título_página"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.título_página"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_título_página"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_entity__medida_título_página": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "entity__medida.título_página": {
+			          "Target": {
+			            "Entity": "entity__medida.título_página"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.título_página"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_título_página"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_título_página": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.título_página": {
+			          "Target": {
+			            "Entity": "entity__medida.título_página"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.título_página"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_título_página"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_titulo_analise_temporal": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.titulo_analise_temporal": {
+			          "Target": {
+			            "Entity": "entity__medida.titulo_analise_temporal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.titulo_analise_temporal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_titulo_analise_temporal"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_titulo_analise_temporal": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.titulo_analise_temporal": {
+			          "Target": {
+			            "Entity": "entity__medida.titulo_analise_temporal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.titulo_analise_temporal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_titulo_analise_temporal"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_subtitulo_analise_temporal": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_subtitulo_analise_temporal"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_entity__medida_subtitulo_analise_temporal": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_subtitulo_analise_temporal"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_subtitulo_analise_temporal_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_meta": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_subtitulo_analise_temporal_meta"
+			        }
+			      ]
+			    },
+			    "aux_meta_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "auxMeta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aux_meta": {
+			          "Target": {
+			            "Entity": "aux_meta"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aux_meta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aux_meta_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "d_estrutura_DRE_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "dEstruturaDRE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_entity__medida_subtitulo_analise_temporal_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "entity__medida.subtitulo_analise_temporal_acumulado": {
+			          "Target": {
+			            "Entity": "entity__medida.subtitulo_analise_temporal_acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.subtitulo_analise_temporal_acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_subtitulo_analise_temporal_acumulado"
+			        }
+			      ]
+			    },
+			    "d_plano_conta_has_d_estrutura_DRE": {
+			      "Binding": {
+			        "ConceptualEntity": "dPlanoConta"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        },
+			        "d_estrutura_DRE": {
+			          "Target": {
+			            "Entity": "d_estrutura_DRE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "d_estrutura_DRE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_d_estrutura_DREs"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_estrutura_DRE"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_estrutura_DREs_have_d_plano_contas"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          },
+			          "Nouns": [
+			            {
+			              "competencia data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_orcamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_orcamentos"
+			        }
+			      ]
+			    },
+			    "f_orcamento_has_d_plano_conta": {
+			      "Binding": {
+			        "ConceptualEntity": "fOrcamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_orcamento": {
+			          "Target": {
+			            "Entity": "f_orcamento"
+			          }
+			        },
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_orcamento"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_orcamentos_have_d_plano_contas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "f_orcamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_f_orcamentos"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          },
+			          "Nouns": [
+			            {
+			              "competencia data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_previsao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_previsaos"
+			        }
+			      ]
+			    },
+			    "f_previsao_has_d_plano_conta": {
+			      "Binding": {
+			        "ConceptualEntity": "fPrevisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_previsao": {
+			          "Target": {
+			            "Entity": "f_previsao"
+			          }
+			        },
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_previsao"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_previsaos_have_d_plano_contas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "f_previsao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_f_previsaos"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          },
+			          "Nouns": [
+			            {
+			              "competencia data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_lancamentos"
+			        }
+			      ]
+			    },
+			    "f_lancamento_has_d_plano_conta": {
+			      "Binding": {
+			        "ConceptualEntity": "fLancamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_lancamento": {
+			          "Target": {
+			            "Entity": "f_lancamento"
+			          }
+			        },
+			        "d_plano_conta": {
+			          "Target": {
+			            "Entity": "d_plano_conta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_lancamento"
+			            },
+			            "Object": {
+			              "Role": "d_plano_conta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_lancamentos_have_d_plano_contas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_plano_conta"
+			            },
+			            "Object": {
+			              "Role": "f_lancamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_plano_contas_have_f_lancamentos"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data": {
+			          "Target": {
+			            "Entity": "d_calendario.data"
+			          }
+			        },
+			        "d_calendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.data.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.data.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.data.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_hierarquia_de_data_has_d_calendario_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.data.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.data.dia": {
+			          "Target": {
+			            "Entity": "d_calendario.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_ano_has_d_calendario_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.data.ano"
+			          }
+			        },
+			        "d_calendario.data.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.ano"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_calendario.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_calendario.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_trimestre_has_d_calendario_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.data.trimestre"
+			          }
+			        },
+			        "d_calendario.data.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.mê"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_calendario.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_calendario.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "d_calendario_data_mê_has_d_calendario_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.data.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.data.mê"
+			          }
+			        },
+			        "d_calendario.data.dia": {
+			          "Target": {
+			            "Entity": "d_calendario.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.mê"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.data.dia"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_calendario.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_calendario.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "d_calendario_inicio_me_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.inicio_me": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me"
+			          }
+			        },
+			        "d_calendario.inicio_me.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.inicio_me"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "inicio_me_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "d_calendario_inicio_me_hierarquia_de_data_has_d_calendario_inicio_me_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.inicio_me.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.inicio_me.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.inicio_me.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "d_calendario_inicio_me_hierarquia_de_data_has_d_calendario_inicio_me_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.inicio_me.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.inicio_me.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.inicio_me.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "d_calendario_inicio_me_hierarquia_de_data_has_d_calendario_inicio_me_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.inicio_me.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.inicio_me.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.inicio_me.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.inicio_me.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.inicio_me.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },

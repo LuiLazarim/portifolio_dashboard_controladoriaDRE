@@ -4,7 +4,7 @@
   "position": {
     "x": 1554.7169811320753,
     "y": 128.94333526141344,
-    "z": 2,
+    "z": 3000,
     "height": 80,
     "width": 160
   },
@@ -97,7 +97,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Maio'"
+                                "Value": "'Mês Atual'"
                               }
                             }
                           ]
@@ -115,6 +115,26 @@
         {
           "properties": {
             "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Mês'"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"

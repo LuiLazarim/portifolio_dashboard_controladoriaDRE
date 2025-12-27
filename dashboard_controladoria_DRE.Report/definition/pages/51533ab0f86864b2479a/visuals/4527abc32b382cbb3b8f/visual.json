@@ -4,7 +4,7 @@
   "position": {
     "x": 1715.0943396226412,
     "y": 128.94333526141344,
-    "z": 3,
+    "z": 4000,
     "height": 80,
     "width": 160.37735849056602
   },
@@ -67,6 +67,26 @@
       "general": [
         {
           "properties": {}
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Filial'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
         }
       ]
     },
