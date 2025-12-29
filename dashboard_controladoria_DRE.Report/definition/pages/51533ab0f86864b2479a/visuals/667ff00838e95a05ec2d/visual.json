@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "667ff00838e95a05ec2d",
   "position": {
-    "x": 34.499172511624245,
-    "y": 221.52100244306092,
-    "z": 6000,
-    "height": 159.78564110647019,
-    "width": 1180.234849081882,
-    "tabOrder": 2
+    "x": 33.636363636363633,
+    "y": 223.63636363636363,
+    "z": 7000,
+    "height": 167.27272727272725,
+    "width": 1180,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -128,7 +128,7 @@
             "calloutSize": {
               "expr": {
                 "Literal": {
-                  "Value": "60D"
+                  "Value": "54D"
                 }
               }
             },
@@ -458,6 +458,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'left'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             }
@@ -932,7 +939,14 @@
             "titleFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -973,6 +987,13 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }
@@ -1016,6 +1037,13 @@
                   "Value": "'Análise Vertical:'"
                 }
               }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
             }
           },
           "selector": {
@@ -1048,6 +1076,20 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }
@@ -1084,6 +1126,20 @@
                   }
                 }
               }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           },
           "selector": {
@@ -1111,6 +1167,13 @@
                   }
                 }
               }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           },
           "selector": {
@@ -1165,6 +1228,20 @@
                   }
                 }
               }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           },
           "selector": {
@@ -1205,6 +1282,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'custom'"
+                }
+              }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
             }
@@ -1259,6 +1350,20 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "titleBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
             }
@@ -1351,14 +1456,14 @@
             "valueFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "12D"
                 }
               }
             },
             "valueBold": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -1380,7 +1485,7 @@
             "valueFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "12D"
                 }
               }
             },
@@ -1419,7 +1524,7 @@
             "valueFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "13D"
                 }
               }
             }
@@ -1453,7 +1558,7 @@
             "valueFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "13D"
                 }
               }
             }
@@ -1514,7 +1619,14 @@
             "valueBold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             }
@@ -1535,6 +1647,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }
@@ -1562,6 +1681,27 @@
           "selector": {
             "metadata": "_medidas.$ Realizado Receita Liquida",
             "id": "field-19118e58-3e0c-b266-5264-d4a0bb0958ed"
+          }
+        },
+        {
+          "properties": {
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "valueBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -1622,7 +1762,7 @@
             "detailBold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -1641,6 +1781,13 @@
               "expr": {
                 "Literal": {
                   "Value": "100D"
+                }
+              }
+            },
+            "detailFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             }
@@ -1758,6 +1905,20 @@
                   "Value": "100D"
                 }
               }
+            },
+            "detailBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "detailFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
             }
           },
           "selector": {
@@ -1873,6 +2034,20 @@
                   "Value": "100D"
                 }
               }
+            },
+            "detailFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "detailBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           },
           "selector": {
@@ -1986,6 +2161,20 @@
               "expr": {
                 "Literal": {
                   "Value": "100D"
+                }
+              }
+            },
+            "detailFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "detailBold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

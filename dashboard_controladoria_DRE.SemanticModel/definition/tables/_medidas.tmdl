@@ -592,6 +592,42 @@ table _medidas
 		displayFolder: Storytelling
 		lineageTag: bf166ed6-8b96-4813-9eaa-95097408a61d
 
+	measure '$ Meta Analise tempora' =
+			
+			[$ Meta] * -1
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: DRE
+		lineageTag: 632e3f2b-0c26-445c-9324-33d14149a068
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado Analise Temporal' =
+			
+			[$ Realizado] * -1
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: DRE
+		lineageTag: 14d71eb1-f027-4795-83b3-f0e701534cf0
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Meta YDT Analise Temporal' =
+			
+			[$ Meta YDT] * -1
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: DRE
+		lineageTag: 0d09d445-b972-40de-b5e1-ba8f14df1691
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '$ Realizado YDT  Analise Temporal' =
+			
+			[$ Realizado YDT] * -1
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: DRE
+		lineageTag: 46650624-17aa-4814-884f-7b48210ed7f5
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
 	partition _medidas = m
 		mode: import
 		source =

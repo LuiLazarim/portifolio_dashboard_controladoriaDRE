@@ -2,7 +2,7 @@
 <rect width="1920" height="1080" fill="#CCA43B"/>
 <rect x="20" y="20" width="1880" height="1040" rx="8" fill="#595959"/>
 <path d="M20 109H1900V1052C1900 1056.42 1896.42 1060 1892 1060H28C23.5817 1060 20 1056.42 20 1052V109Z" fill="#E5E5E5"/>
-<rect opacity="0.2" x="40" y="405" width="1168" height="634" rx="8" fill="#CCA43B"/>
+<rect opacity="0.2" x="40" y="395" width="1168" height="644" rx="8" fill="#CCA43B"/>
 <rect opacity="0.2" x="40" y="239" width="285" height="146" rx="8" fill="#CCA43B"/>
 <rect opacity="0.2" x="335" y="239" width="284" height="146" rx="8" fill="#CCA43B"/>
 <rect opacity="0.2" x="629" y="239" width="284" height="146" rx="8" fill="#CCA43B"/>

@@ -1,4 +1,4 @@
-expression diretorioDados = "C:\Users\Meu Computador\projetos_powerBI\dashboard_controladoria_DRE\BaseDados.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression diretorioDados = "C:\Users\fam.052757\Documents\portifolio_dashboard_controladoriaDRE\BaseDados.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: fa67830b-7989-4e79-8eb3-3e809cc82b73
 
 	annotation PBI_NavigationStepName = Navegação

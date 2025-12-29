@@ -94,14 +94,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "layout_dre46894645767940646.svg"
+                    "ItemName": "layout_dre6621576984060565.svg"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fill'"
+                    "Value": "'Normal'"
                   }
                 }
               }
@@ -123,6 +123,30 @@
         },
         "selector": {
           "id": "Available"
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "Literal": {
+                    "Value": "''"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     ]

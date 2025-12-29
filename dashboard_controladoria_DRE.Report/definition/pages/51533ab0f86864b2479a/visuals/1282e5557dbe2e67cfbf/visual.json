@@ -4,10 +4,10 @@
   "position": {
     "x": 1235,
     "y": 775.00000000000011,
-    "z": 9000,
+    "z": 10000,
     "height": 258.33333333333337,
     "width": 640,
-    "tabOrder": 4
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -396,7 +396,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "12D"
                 }
               }
             },
