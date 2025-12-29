@@ -40,6 +40,10 @@ Explicação visual da composição do resultado.
 
 <img width="826" height="459" alt="image" src="https://github.com/user-attachments/assets/637e6bf1-0b83-4443-a0ff-b0e451c9e4c5" />
 
+## 🔗 Demonstração Interativa
+Acesse o dashboard ao vivo e navegue pelos dados:
+[**👉 Clique aqui para acessar o Dashboard Online**]([![Power BI]([https://img.shields.io/badge/Power%20BI-Acessar_Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black](https://app.powerbi.com/view?r=eyJrIjoiNWU3ZmNmYTYtNDM0Yy00ZmFkLWE2NjYtOTgzOTQxYjFhZjBjIiwidCI6ImY1MDc3YTRmLTc5OTgtNDc1Mi1iOWQ2LWE2OTI1ZDBjZTljZiJ9))])
+
 ---
 
 ## 🛠️ Estrutura do Repositório
@@ -57,6 +61,7 @@ O projeto utiliza a estrutura moderna de salvamento do Power BI (`.pbip`), separ
     ├── estilo/                         # Temas (JSON)
     ├── imagens/                        # Ícones e logos
     └── layouts/                        # Templates de fundo
+
 
 
 
