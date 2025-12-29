@@ -27,6 +27,7 @@ O painel simula a saúde financeira de uma rede de cafeterias (*XP Bucks*), apli
 
 ### 1. Visão Geral: Realizado vs Orçado
 Comparativo detalhado com tabela hierárquica e indicadores de atingimento de meta.
+
 <img width="1348" height="760" alt="image" src="https://github.com/user-attachments/assets/36f582b2-db10-466d-acd6-0d50201b5bc6" />
 
 ### 2. Análise de Cenários: Realizado vs Previsto
@@ -36,6 +37,7 @@ Foco no ajuste de forecast e tendências de curto prazo.
 
 ### 3. Gráfico de Bridge (Waterfall)
 Explicação visual da composição do resultado.
+
 <img width="826" height="459" alt="image" src="https://github.com/user-attachments/assets/637e6bf1-0b83-4443-a0ff-b0e451c9e4c5" />
 
 ---
@@ -55,5 +57,6 @@ O projeto utiliza a estrutura moderna de salvamento do Power BI (`.pbip`), separ
     ├── estilo/                         # Temas (JSON)
     ├── imagens/                        # Ícones e logos
     └── layouts/                        # Templates de fundo
+
 
 
