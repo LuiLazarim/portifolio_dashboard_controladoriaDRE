@@ -31,6 +31,7 @@ Comparativo detalhado com tabela hierárquica e indicadores de atingimento de me
 
 ### 2. Análise de Cenários: Realizado vs Previsto
 Foco no ajuste de forecast e tendências de curto prazo.
+
 <img width="467" height="574" alt="image" src="https://github.com/user-attachments/assets/d3fb8f15-dc28-4f6b-97d9-64f1ee0a6b38" />
 
 ### 3. Gráfico de Bridge (Waterfall)
@@ -54,4 +55,5 @@ O projeto utiliza a estrutura moderna de salvamento do Power BI (`.pbip`), separ
     ├── estilo/                         # Temas (JSON)
     ├── imagens/                        # Ícones e logos
     └── layouts/                        # Templates de fundo
+
 
